@@ -84,23 +84,9 @@ $("#parse").click(function () {
 } );
 $("#request").click(function () { 
 	var url = "http://click";
-	var selected = $("input[type='radio'][name='server']:checked");
-	if(selected.length > 0) {
-		switch(selected.val()) {
-			case "S4" : 
-				url = url + ".s4";
-				break;
-			case "S6" : 
-				url = url + ".s6";
-				break;
-			case "S7" : 
-				url = url + ".s7";
-				break;
-		}
-	}
 	var url = url + ".exacttarget.com/conversion.aspx?xml=" + xml;
 	$("#img").attr("src",url);
-	alert("Requested"); 
+	alert("Conversion Tracking Requested"); 
 } );
 </script>
 </HTML>
